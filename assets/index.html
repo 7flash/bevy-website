@@ -1,0 +1,4257 @@
+
+    
+
+
+
+    
+
+
+
+    
+        
+    
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Bevy - Assets" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bevyengine.org&#x2F;&#x2F;assets&#x2F;" />
+        <meta property="og:image" content="https://bevyengine.org/assets/bevy_logo_fill.png" />
+        <meta property="og:description" content="Bevy is a refreshingly simple data-driven game engine built in Rust. It is free and open-source forever!" />
+        <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+        <link rel="stylesheet" href="/site.css" />
+        <link href="/atom.xml" rel="alternate" type="application/atom+xml" />
+        <title>Bevy - Assets</title>
+         
+    </head>
+    <body>
+        <div class="layout">
+            <input id="mobile-menu-state" class="hidden" type="checkbox">
+            <header class="layout__header header" data-mobile-menu-state-container>
+                <div class="header__content">
+                    <label class="main-menu-backdrop" for="mobile-menu-state"></label>
+                    <label class="header__hamburger button-square button-square--header" for="mobile-menu-state">
+                        <img src="/assets/icon-hamburger.svg">
+                    </label>
+                    <div class="header__left-block">
+                        <a class="header__logo" href="/">
+                            <img class="logo logo--icon" src="/assets/bevy_icon_dark.svg" alt="Bevy Engine">
+                            <img class="logo logo--full" src="/assets/bevy_logo_dark.svg" alt="Bevy Engine">
+                        </a>
+                        <div class="header__message">
+                            
+                                Assets
+                            
+                        </div>
+                    </div>
+                    
+    <input id="page-menu-switch-state" class="hidden" type="checkbox" checked>
+
+                    <nav class="header__menu main-menu main-menu--with-page-menu" role="navigation" data-page-menu-switch-state-container>
+                        <div class="main-menu__header">
+                            <a href="/">
+                                <img class="logo" src="/assets/bevy_logo_dark.svg" alt="Bevy Engine">
+                            </a>
+                            <label class="button-square button-square--header" for="mobile-menu-state">
+                                <img src="/assets/icon-times.svg">
+                            </label>
+                        </div>
+                        
+    <div class="main-menu__page-menu-switch">
+        <label class="menu-switch" for="page-menu-switch-state">
+            <div class="menu-switch__option menu-switch__option--main-menu">Main Menu</div>
+            <div class="menu-switch__option menu-switch__option--page-menu">Assets</div>
+        </label>
+    </div>
+
+                        <div class="main-menu__content">
+                            <div class="main-menu__page-menu">
+                                
+    
+    <ul class="tree-menu">
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#learning">Learning</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+        
+        <input id="mobile-menu-assets-assets" class="tree-menu__state" type="checkbox" checked>
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="#assets">Assets</a>
+            
+                <label class="tree-menu__toggle" for="mobile-menu-assets-assets">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#2d">2D</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#3d">3D</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#ai">AI</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#accessibility">Accessibility</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#animation">Animation</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#asset-loading">Asset Loading</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#audio">Audio</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#backends">Backends</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#development-tools">Development tools</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#devices">Devices</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#helpers">Helpers</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#input">Input</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#networking">Networking</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#physics">Physics</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#platform-integration">Platform Integration</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#scripting">Scripting</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#shapes">Shapes</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#templates">Templates</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#ui">UI</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+        
+        <input id="mobile-menu-assets-apps" class="tree-menu__state" type="checkbox" checked>
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="#apps">Apps</a>
+            
+                <label class="tree-menu__toggle" for="mobile-menu-assets-apps">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#games">Games</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#tools">Tools</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+
+
+                            </div>
+                            <ul class="main-menu__menu">
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;learn" class="main-menu__link">
+            <span>Learn</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;news" class="main-menu__link">
+            <span>News</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;community" class="main-menu__link">
+            <span>Community</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+        
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;assets" class="main-menu__link main-menu__link--active">
+            <span>Assets</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;examples" class="main-menu__link">
+            <span>Examples</span>
+        </a>
+    </li>
+
+                                
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__cta-container">
+                        <a class="button button--pink header__cta" href="https://github.com/sponsors/cart">Donate <img class="button__icon" src="/assets/heart.svg" alt="heart icon"/></a>
+                        <a class="button header__cta" href="/learn/book/getting-started/">Get Started</a>
+                    </div>
+                </div>
+            </header>
+            <main class="layout__content">
+                <div class="container">
+                    
+    <div class="page-with-menu">
+        <div class="page-with-menu__menu-wrapper">
+            <div class="page-with-menu__menu">
+                
+    
+    <ul class="tree-menu">
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#learning">Learning</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+        
+        <input id="page-menu-assets-assets" class="tree-menu__state" type="checkbox" checked>
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="#assets">Assets</a>
+            
+                <label class="tree-menu__toggle" for="page-menu-assets-assets">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#2d">2D</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#3d">3D</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#ai">AI</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#accessibility">Accessibility</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#animation">Animation</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#asset-loading">Asset Loading</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#audio">Audio</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#backends">Backends</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#development-tools">Development tools</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#devices">Devices</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#helpers">Helpers</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#input">Input</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#networking">Networking</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#physics">Physics</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#platform-integration">Platform Integration</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#scripting">Scripting</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#shapes">Shapes</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#templates">Templates</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#ui">UI</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+        
+        <input id="page-menu-assets-apps" class="tree-menu__state" type="checkbox" checked>
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="#apps">Apps</a>
+            
+                <label class="tree-menu__toggle" for="page-menu-assets-apps">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#games">Games</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#tools">Tools</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+
+
+            </div>
+        </div>
+        <div class="page-with-menu__content">
+            
+    <div class="assets">
+        <div class="assets-intro">
+            A collection of third-party Bevy assets, plugins, learning resources, and apps made by the community. If you would like to
+            share what you're working on, <a href="https://github.com/bevyengine/bevy-assets">submit a pull request</a>!
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="learning"></a>
+        <h1 id="learning" class="asset-section">
+            Learning<a class="anchor-link" href="#learning">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="official-bevy-examples">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;bevyengine&#x2F;bevy&#x2F;tree&#x2F;latest&#x2F;examples">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;4e424e8bfdfe1d4800.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Official Bevy Examples</div>
+            <div class="card-description">
+                Learn each Bevy feature from minimal illustrative examples
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="minesweeper-tutorial">
+    <a href="https:&#x2F;&#x2F;dev.to&#x2F;qongzi&#x2F;bevy-minesweeper-introduction-4l7f">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;7944914a460fd25700.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Minesweeper Tutorial</div>
+            <div class="card-description">
+                Learn to make a cross platform minesweeper in Bevy 0.6
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="0-3-to-0-4-unofficial">
+    <a href="https:&#x2F;&#x2F;sburris.xyz&#x2F;posts&#x2F;bevy-update-0-4&#x2F;">
+        
+        <div class="card-text">
+            <div class="card-title">0.3 to 0.4 (unofficial)</div>
+            <div class="card-description">
+                Migration guide to 0.4
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="intro-to-bevy-video-tutorials">
+    <a href="https:&#x2F;&#x2F;youtube.com&#x2F;playlist?list=PLT_D88-MTFOPPl75g4WshL1Gx2bnGTUkz">
+        
+        <div class="card-text">
+            <div class="card-title">Intro to Bevy Video Tutorials</div>
+            <div class="card-description">
+                Video Series making a simple Pokemon Style RPG
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="making-a-p2p-web-game-with-rollback">
+    <a href="https:&#x2F;&#x2F;johanhelsing.studio&#x2F;posts&#x2F;extreme-bevy">
+        
+        <div class="card-text">
+            <div class="card-title">Making a p2p web game with rollback</div>
+            <div class="card-description">
+                Walkthrough on how to use Matchbox and bevy_ggrs to implement a low-latency multiplayer web game
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="making-a-snake-clone">
+    <a href="https:&#x2F;&#x2F;mbuffett.com&#x2F;posts&#x2F;bevy-snake-tutorial&#x2F;">
+        
+        <div class="card-text">
+            <div class="card-title">Making a Snake Clone</div>
+            <div class="card-description">
+                Walkthrough on how to make a snake clone
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="making-chess-clone-in-3d">
+    <a href="https:&#x2F;&#x2F;caballerocoll.com&#x2F;blog&#x2F;bevy-chess-tutorial">
+        
+        <div class="card-text">
+            <div class="card-title">Making Chess Clone in 3D</div>
+            <div class="card-description">
+                Walkthrough on how to make a Chess Clone with 3D pieces
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="using-rapier-for-physics">
+    <a href="https:&#x2F;&#x2F;sburris.xyz&#x2F;posts&#x2F;bevy-gravity&#x2F;">
+        
+        <div class="card-text">
+            <div class="card-title">Using Rapier for Physics</div>
+            <div class="card-description">
+                Gravity and Physics in the Bevy Game Engine
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="making-a-rhythm-game">
+    <a href="https:&#x2F;&#x2F;caballerocoll.com&#x2F;blog&#x2F;bevy-rhythm-game">
+        
+        <div class="card-text">
+            <div class="card-title">Making a Rhythm game</div>
+            <div class="card-description">
+                Walkthrough on how to make a Rhythm game, with menu, audio and shaders.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="maz-digital-blog">
+    <a href="https:&#x2F;&#x2F;maz.digital&#x2F;bevy&#x2F;list">
+        
+        <div class="card-text">
+            <div class="card-title">Maz.digital Blog</div>
+            <div class="card-description">
+                Beginner-focused blog posts introducing Bevy's features.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="learn-bevy-s-ecs-by-ripping-off-someone-else-s-project">
+    <a href="https:&#x2F;&#x2F;saveriomiroddi.github.io&#x2F;learn_bevy_ecs_by_ripping_off">
+        
+        <div class="card-text">
+            <div class="card-title">Learn Bevy&#x27;s ECS by ripping off someone else&#x27;s project</div>
+            <div class="card-description">
+                A tutorial on Bevy's ECS, taught by porting Rusty Roguelike from Legion to Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-cheatbook">
+    <a href="https:&#x2F;&#x2F;bevy-cheatbook.github.io">
+        
+        <div class="card-text">
+            <div class="card-title">Bevy Cheatbook</div>
+            <div class="card-description">
+                Unofficial reference book. Offers practical advice, teaches topics not covered by official docs.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-basics">
+    <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;playlist?list=PL6uRoaCCw7GN_lJxpKS3j-KXuThRiSXc6">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;4cd7550775d298ec00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Bevy Basics</div>
+            <div class="card-description">
+                A Youtube tutorial series about the basics of Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="official-migration-guides">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;">
+        
+        <div class="card-text">
+            <div class="card-title">Official Migration Guides</div>
+            <div class="card-description">
+                Migration guide for new versions of Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+        
+
+        
+        
+        
+        
+        
+
+        <a class="anchor-target" id="assets"></a>
+        <h1 id="assets" class="asset-section">
+            Assets<a class="anchor-link" href="#assets">#</a>
+        </h1>
+
+        
+
+        
+        
+        
+        
+
+        <a class="anchor-target" id="2d"></a>
+        <h3 class="asset-subsection">
+            2D<a class="anchor-link" href="#2d">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-life">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ManevilleF&#x2F;bevy_life">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;8f06f363af7ddc5400.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_life</div>
+            <div class="card-description">
+                Cellular Automaton plugin for Bevy game engine.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-pancam">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;johanhelsing&#x2F;bevy_pancam">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_pancam</div>
+            <div class="card-description">
+                A map-like panning and zooming camera controller
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-tilemap">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;joshuajbouw&#x2F;bevy_tilemap">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_tilemap</div>
+            <div class="card-description">
+                Chunk rendered tilemap for Bevy game engine.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-earcutr">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;frewsxcv&#x2F;bevy-earcutr">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-earcutr</div>
+            <div class="card-description">
+                Draw polygons
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-parallax">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Corrosive-Games&#x2F;bevy-parallax">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/2d/bevy-parallax.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy-parallax</div>
+            <div class="card-description">
+                 A Bevy plugin for creating a parallax effect.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-prototype-parallax">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;btrepp&#x2F;bevy-prototype-parallax">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_prototype_parallax</div>
+            <div class="card-description">
+                A parallax scrolling background plugin.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-ldtk">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;katharostech&#x2F;bevy_ldtk">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_ldtk</div>
+            <div class="card-description">
+                Efficient tilemap rendering for LDtk maps.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-retro">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;katharostech&#x2F;bevy_retro">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_retro</div>
+            <div class="card-description">
+                2D pixel-perfect renderer for Bevy with support for OpenGL/WebGL
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-ecs-ldtk">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Trouv&#x2F;bevy_ecs_ldtk">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/2d/bevy_ecs_ldtk.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_ecs_ldtk</div>
+            <div class="card-description">
+                An ergonomic and ECS-friendly ldtk plugin!
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-prototype-lyon">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Nilirad&#x2F;bevy_prototype_lyon">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_prototype_lyon</div>
+            <div class="card-description">
+                Draw 2D shapes, like triangles, circles, and beziers.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-tiled">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;stararawn&#x2F;bevy_tiled">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_tiled</div>
+            <div class="card-description">
+                A plugin for rendering Tiled maps
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-tileset">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;MrGVSV&#x2F;bevy_tileset">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/2d/bevy_tileset.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_tileset</div>
+            <div class="card-description">
+                Simple, configurable tilesets in Bevy using RON.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-interact-2d">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_interact_2d">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_interact_2d</div>
+            <div class="card-description">
+                2D mouse interactions
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-pixels">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;dtcristo&#x2F;bevy_pixels">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_pixels</div>
+            <div class="card-description">
+                A plugin that uses Pixels (a tiny pixel buffer) for rendering.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-ecs-tilemap">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;StarArawn&#x2F;bevy_ecs_tilemap">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_ecs_tilemap</div>
+            <div class="card-description">
+                A plugin for tilemaps where each tile is an entity.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="3d"></a>
+        <h3 class="asset-subsection">
+            3D<a class="anchor-link" href="#3d">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-atmosphere">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_atmosphere">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_atmosphere</div>
+            <div class="card-description">
+                A procedural sky plugin
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-obj">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;AmionSky&#x2F;bevy_obj">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_obj</div>
+            <div class="card-description">
+                Wavefront .obj mesh asset loader plugin
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-mod-raycast">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;aevyrie&#x2F;bevy_mod_raycast">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;6b0cf3b943fe806300.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_mod_raycast</div>
+            <div class="card-description">
+                A plugin for raycasting against meshes and primitives
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-hanabi">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_hanabi">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/3d/bevy_hanabi.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_hanabi</div>
+            <div class="card-description">
+                Hanabi — a GPU particle system plugin.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-flycam">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;sburris0&#x2F;bevy_flycam">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_flycam</div>
+            <div class="card-description">
+                A basic FPS-style camera controller
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-vox">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;erasin&#x2F;bevy_vox">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_vox</div>
+            <div class="card-description">
+                MagicaVoxel Vox file loader plugin
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-transform-gizmo">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ForesightMiningSoftwareCorporation&#x2F;bevy_transform_gizmo">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;9076bc88fe2a652b00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_transform_gizmo</div>
+            <div class="card-description">
+                Gizmo for transforming meshes in 3d
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-wow">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Tezza48&#x2F;Bevy-WoW">
+        
+        <div class="card-text">
+            <div class="card-title">Bevy-WoW</div>
+            <div class="card-description">
+                A WoW-style camera
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="smooth-bevy-cameras">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;bonsairobo&#x2F;smooth-bevy-cameras">
+        
+        <div class="card-text">
+            <div class="card-title">smooth-bevy-cameras</div>
+            <div class="card-description">
+                Camera controllers with buttery, exponential smoothing.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-mod-picking">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;aevyrie&#x2F;bevy_mod_picking">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;1214f704d7f31c8200.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_mod_picking</div>
+            <div class="card-description">
+                3D mouse picking plugin
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-fly-camera">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_fly_camera">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_fly_camera</div>
+            <div class="card-description">
+                A flying camera plugin
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-config-cam">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;BlackPhlox&#x2F;bevy_config_cam">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;a259d2212c7fbda300.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_config_cam</div>
+            <div class="card-description">
+                An easy plug-n-play multifunctional camera controller with many camera-modes to fit your every need
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-stl">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;nilclass&#x2F;bevy_stl">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_stl</div>
+            <div class="card-description">
+                STL mesh asset loader plugin
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-4x-camera">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_4x_camera">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_4x_camera</div>
+            <div class="card-description">
+                A 4X style camera for bevy. Demo: https://imgur.com/XIIDcIW
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-hikari">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;cryscan&#x2F;bevy-hikari">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/3d/bevy-hikari.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy-hikari</div>
+            <div class="card-description">
+                Voxel cone tracing global illumination plugin
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-vox-mesh">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Game4all&#x2F;bevy_vox_mesh">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_vox_mesh</div>
+            <div class="card-description">
+                Asset loader plugin to load MagicaVoxel files as meshes.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-orbit-controls">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;iMplode-nZ&#x2F;bevy-orbit-controls">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-orbit-controls</div>
+            <div class="card-description">
+                An orbit controls camera controller
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="ai"></a>
+        <h3 class="asset-subsection">
+            AI<a class="anchor-link" href="#ai">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="big-brain">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;zkat&#x2F;big-brain">
+        
+        <div class="card-text">
+            <div class="card-title">big-brain</div>
+            <div class="card-description">
+                A highly-parallel Utility AI engine.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="accessibility"></a>
+        <h3 class="asset-subsection">
+            Accessibility<a class="anchor-link" href="#accessibility">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-fluent">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;kgv&#x2F;bevy_fluent">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_fluent</div>
+            <div class="card-description">
+                A plugin for localization using Fluent
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-color-blindness">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_color_blindness">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_color_blindness</div>
+            <div class="card-description">
+                Simulate and preview different types of color blindness
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="animation"></a>
+        <h3 class="asset-subsection">
+            Animation<a class="anchor-link" href="#animation">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-manim">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;simensgreen&#x2F;bevy_manim">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_manim</div>
+            <div class="card-description">
+                bevy plugin for drawing and animation like a 3b1b's manim
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-simple-state-machine">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;LucaRickler&#x2F;bevy-simple-state-machine">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-simple-state-machine</div>
+            <div class="card-description">
+                A rudimentary animation state machine system
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="benimator">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;jcornaz&#x2F;benimator">
+        
+        <div class="card-text">
+            <div class="card-title">benimator</div>
+            <div class="card-description">
+                Sprite sheet animation
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-tweening">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_tweening">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/animation/bevy_tweening.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_tweening</div>
+            <div class="card-description">
+                A tweening (easing) animation plugin for components and assets.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-easings">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_easings">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/animation/bevy_easings.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_easings</div>
+            <div class="card-description">
+                Easing (or tweening) a component value to another value.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-sprite-animation">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;PhaestusFox&#x2F;bevy_sprite_animation">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_sprite_animation</div>
+            <div class="card-description">
+                A plugin that recreates Aarthificial's Reanimator for bevy TextureAtlasSprites.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="asset-loading"></a>
+        <h3 class="asset-subsection">
+            Asset Loading<a class="anchor-link" href="#asset-loading">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-embedded-assets">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_embedded_assets">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;af793a4b48b5253c00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_embedded_assets</div>
+            <div class="card-description">
+                Plugin to embed assets in your game binary
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-assets-bundler">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;hanabi1224&#x2F;bevy_assets_bundler">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_assets_bundler</div>
+            <div class="card-description">
+                Assets Bundler with content encryption support
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-asset-loader">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;NiklasEi&#x2F;bevy_asset_loader">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_asset_loader</div>
+            <div class="card-description">
+                Automatically load asset collections during a configurable State
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-assetio-zip">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;katharostech&#x2F;bevy_assetio_zip">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_assetio_zip</div>
+            <div class="card-description">
+                A plugin for loading assets from an optionally obfuscated zip file.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-asset-ron">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_asset_ron">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_asset_ron</div>
+            <div class="card-description">
+                Custom RON Asset loading.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-web-asset">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_web_asset">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_web_asset</div>
+            <div class="card-description">
+                Adds the ability to load assets from http(s) urls
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-common-assets">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;NiklasEi&#x2F;bevy_common_assets">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_common_assets</div>
+            <div class="card-description">
+                Plugins to load json, yaml, ron, toml, and MessagePack assets
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="audio"></a>
+        <h3 class="asset-subsection">
+            Audio<a class="anchor-link" href="#audio">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-rrise">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;dtaralla&#x2F;bevy-rrise">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_rrise</div>
+            <div class="card-description">
+                Bevy audio plugin using Wwise
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-oddio">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;harudagondi&#x2F;bevy_oddio">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_oddio</div>
+            <div class="card-description">
+                A third party Bevy plugin that integrates `oddio` into Bevy.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-fundsp">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;harudagondi&#x2F;bevy_fundsp">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_fundsp</div>
+            <div class="card-description">
+                Bevy plugin for audio processing and synthesis using FunDSP
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-kira-audio">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;NiklasEi&#x2F;bevy_kira_audio">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_kira_audio</div>
+            <div class="card-description">
+                An alternative Bevy audio plugin using Kira
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="backends"></a>
+        <h3 class="asset-subsection">
+            Backends<a class="anchor-link" href="#backends">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-doryen">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;smokku&#x2F;bevy_doryen">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_doryen</div>
+            <div class="card-description">
+                A plugin integrating Bevy ECS with doryen-rs Ascii roguelike library.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-webgl2">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;mrk-its&#x2F;bevy_webgl2">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_webgl2</div>
+            <div class="card-description">
+                WebGL2 renderer plugin for WASM target
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="prototype-bevy-sdl2">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;aclysma&#x2F;prototype_bevy_sdl2">
+        
+        <div class="card-text">
+            <div class="card-title">prototype_bevy_sdl2</div>
+            <div class="card-description">
+                A prototype for SDL2 integration into Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-miniquad">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;smokku&#x2F;bevy_miniquad">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_miniquad</div>
+            <div class="card-description">
+                A plugin replacing winit windowing and render pipeline with miniquad library.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="development-tools"></a>
+        <h3 class="asset-subsection">
+            Development tools<a class="anchor-link" href="#development-tools">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-mod-gizmos">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_mod_gizmos">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_mod_gizmos</div>
+            <div class="card-description">
+                Visual gizmos to aid with development and debugging in Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-inspector-egui">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;jakobhellermann&#x2F;bevy-inspector-egui">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-inspector-egui</div>
+            <div class="card-description">
+                Visually edit fields of structs inside the game using egui.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-debug-text-overlay">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_debug_text_overlay">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/development tools/bevy-debug-text-overlay-demo.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy-debug-text-overlay</div>
+            <div class="card-description">
+                 A convenient on-screen message print macro
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-remote-devtools">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;reneeichhorn&#x2F;bevy-remote-devtools">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-remote-devtools</div>
+            <div class="card-description">
+                UI for debugging entities, assets, logs and systems over network
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-yoleck">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy-yoleck">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-yoleck</div>
+            <div class="card-description">
+                Turn a game into a level editor for its own levels
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevycheck">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;jakobhellermann&#x2F;bevycheck">
+        
+        <div class="card-text">
+            <div class="card-title">bevycheck</div>
+            <div class="card-description">
+                annotate invalid systems with `#[bevycheck::system]` to get nice error messages for what's wrong
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-mod-debugdump">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;jakobhellermann&#x2F;bevy_mod_debugdump">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_mod_debugdump</div>
+            <div class="card-description">
+                Render graph and schedule graph visualizers using egui.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-shadertoy-wgsl">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;eliotbo&#x2F;bevy_shadertoy_wgsl">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/development tools/bevy_shadertoy_wgsl.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_shadertoy_wgsl</div>
+            <div class="card-description">
+                A Shadertoy clone, facilitating coding complex shaders
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-mod-debug-console">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;hymm&#x2F;bevy_mod_debug_console">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_mod_debug_console</div>
+            <div class="card-description">
+                Get info from ecs through
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="autodefault">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Lucretiel&#x2F;autodefault">
+        
+        <div class="card-text">
+            <div class="card-title">autodefault</div>
+            <div class="card-description">
+                annotate functions to have them automatically insert `..Default::default()` into struct expressions
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="devices"></a>
+        <h3 class="asset-subsection">
+            Devices<a class="anchor-link" href="#devices">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-streamdeck">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_streamdeck">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/devices/bevy_streamdeck.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_streamdeck</div>
+            <div class="card-description">
+                Control and interact with your Stream Deck
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="helpers"></a>
+        <h3 class="asset-subsection">
+            Helpers<a class="anchor-link" href="#helpers">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-plot">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;eliotbo&#x2F;bevy_plot">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;fe8772ddbd04a3e200.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_plot</div>
+            <div class="card-description">
+                Plotting library with a focus on esthetics and interactivity
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-add-events-macro">
+    <a href="https:&#x2F;&#x2F;git.tebibyte.media&#x2F;nexus&#x2F;nexus&#x2F;src&#x2F;branch&#x2F;main&#x2F;bevy-add-events-macro">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-add-events-macro</div>
+            <div class="card-description">
+                adds the add_events! macro to make adding multiple events easier
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-debug-lines">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Toqozz&#x2F;bevy_debug_lines">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_debug_lines</div>
+            <div class="card-description">
+                Simple line drawing api for bevy.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-scene-hook">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_scene_hook">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-scene-hook</div>
+            <div class="card-description">
+                Ad-hoc component insertion for scenes
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-contrib-colors">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_contrib_colors">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_contrib_colors</div>
+            <div class="card-description">
+                A simple color library.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-sequential-actions">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;hikikones&#x2F;bevy-sequential-actions">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-sequential-actions</div>
+            <div class="card-description">
+                A Bevy library for executing various actions in a sequence.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-discovery">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_discovery">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_discovery</div>
+            <div class="card-description">
+                Automatically detects and registers systems for you.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-loading">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_loading">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_loading</div>
+            <div class="card-description">
+                Easily implement a loading state, tracking the progress of assets and other tasks.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-match-3">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_match3">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/assets/helpers/bevy_match3.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Bevy Match 3</div>
+            <div class="card-description">
+                A crate for handling the logic side of match 3 games
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-prototype-inline-assets">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_prototype_inline_assets">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_prototype_inline_assets</div>
+            <div class="card-description">
+                A simple plugin for bundling assets into your binary.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-framepace">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_framepace">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;1433d45eee9f9ebf00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_framepace</div>
+            <div class="card-description">
+                Framepacing and framelimiting for bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-event-set">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;woubuc&#x2F;bevy-event-set">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_event_set</div>
+            <div class="card-description">
+                A macro to create event bundles for Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-system-graph">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_system_graph">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_system_graph</div>
+            <div class="card-description">
+                A handle based API for ordering ECS systems.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-proto">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;MrGVSV&#x2F;bevy_proto">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;02646a7cc7ec894400.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_proto</div>
+            <div class="card-description">
+                Create entity templates with a simple config file.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="input"></a>
+        <h3 class="asset-subsection">
+            Input<a class="anchor-link" href="#input">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-input-actionmap">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;lightsoutgames&#x2F;bevy_input_actionmap">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_input_actionmap</div>
+            <div class="card-description">
+                Maps key and gamepad events to actions in Bevy.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-midi">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;BlackPhlox&#x2F;bevy_midi">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;a6fd84bb390e86d800.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_midi</div>
+            <div class="card-description">
+                Send and receive MIDI data to and from bevy using DAWS or MIDI Controllers
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="ezinput">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;existentially&#x2F;ezinput">
+        
+        <div class="card-text">
+            <div class="card-title">ezinput</div>
+            <div class="card-description">
+                Easier joystick, mouse and keyboard input handling in Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-rosc">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;DrLuke&#x2F;bevy_rosc">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_rosc</div>
+            <div class="card-description">
+                Send and receive OSC 1.0 messages using the rosc library
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-serial">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;hideakitai&#x2F;bevy_serial">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_serial</div>
+            <div class="card-description">
+                Serial port communication plugin for Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-advanced-input">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;sadpython&#x2F;bevy_advanced_input">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_advanced_input</div>
+            <div class="card-description">
+                Input keybindings, including support for combinations / hotkeys / modifier keys.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="leafwing-input-manager">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;leafwing-input-manager">
+        
+        <div class="card-text">
+            <div class="card-title">leafwing_input_manager</div>
+            <div class="card-description">
+                Track actions and configure cross-device input mappings. Fully documented; exceptionally ergonomic.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-osc">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;BlackPhlox&#x2F;bevy_osc">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_osc</div>
+            <div class="card-description">
+                Send and receive OSC data to and from bevy and other programs or controllers that uses OSC
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="networking"></a>
+        <h3 class="asset-subsection">
+            Networking<a class="anchor-link" href="#networking">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-ggrs">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;gschup&#x2F;bevy_ggrs">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;493ab1af685a5ca800.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_ggrs</div>
+            <div class="card-description">
+                Integration plugin for the P2P rollback networking library GGRS.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-pigeon">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;MitchellMarinoDev&#x2F;bevy-pigeon">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-pigeon</div>
+            <div class="card-description">
+                A simple yet powerfull networking plugin. Supports messages and automatic component syncing.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-spicy-networking">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;CabbitStudios&#x2F;bevy_spicy_networking">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_spicy_networking</div>
+            <div class="card-description">
+                Unifying server/client networking crate using tokio as asynchronous backend.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bootleg-networking">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;billyb2&#x2F;bootleg_networking">
+        
+        <div class="card-text">
+            <div class="card-title">bootleg_networking</div>
+            <div class="card-description">
+                A completely cross-platform networking plugin utilizing TCP/UDP and bevy_networking_turbulence
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-prototype-laminar-networking">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ncallaway&#x2F;bevy-prototype-laminar-networking">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_prototype_laminar_networking</div>
+            <div class="card-description">
+                A prototype networking plugin using `laminar` as the transport.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-eventwork">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_eventwork">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_eventwork</div>
+            <div class="card-description">
+                Server/client message based networking plugin, async based, tokio compatible but not necessary.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-renet">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;lucaspoffo&#x2F;renet&#x2F;tree&#x2F;master&#x2F;bevy_renet">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_renet</div>
+            <div class="card-description">
+                Bevy Plugin for renet, a network library for Server/Client with authentication and client management
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="naia">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;naia-rs&#x2F;naia&#x2F;tree&#x2F;main&#x2F;demos&#x2F;bevy">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;1408f8ffb58bb8e200.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">naia</div>
+            <div class="card-description">
+                Cross-platform client/server networking library with ECS world sync & FPS-style rollback
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-networking-turbulence">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;smokku&#x2F;bevy_networking_turbulence">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_networking_turbulence</div>
+            <div class="card-description">
+                Networking plugin running on naia-socket and turbulence libraries.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-backroll">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_backroll">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_backroll</div>
+            <div class="card-description">
+                Integration plugin with Backroll for providing session-based peer-to-peer rollback networking.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-simple-networking">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;bacongobbler&#x2F;bevy_simple_networking">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_simple_networking</div>
+            <div class="card-description">
+                A simple authoritative server networking library for Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-prototype-simple-net">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;0x22fe&#x2F;bevy_prototype_simple_net">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_prototype_simple_net</div>
+            <div class="card-description">
+                A working prototype networking plugin that can create client/server systems over TCP or UDP.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="physics"></a>
+        <h3 class="asset-subsection">
+            Physics<a class="anchor-link" href="#physics">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="impacted">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;jcornaz&#x2F;impacted">
+        
+        <div class="card-text">
+            <div class="card-title">impacted</div>
+            <div class="card-description">
+                2d collision test for game-development in rust (with optional integration and example for bevy)
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="physme">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;walterpie&#x2F;physme">
+        
+        <div class="card-text">
+            <div class="card-title">physme</div>
+            <div class="card-description">
+                A simplistic physics engine for 2D/3D sims. Physically inaccurate, but satisfying and easy to use.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="heron">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;jcornaz&#x2F;heron">
+        
+        <div class="card-text">
+            <div class="card-title">heron</div>
+            <div class="card-description">
+                An ergonomic physics API for 2d and 3d bevy games. (powered by rapier)
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-physimple">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;RustyStriker&#x2F;bevy_physimple">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_physimple</div>
+            <div class="card-description">
+                A physics lib for the bevy game engine based on physme.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-rapier">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;dimforge&#x2F;bevy_rapier">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_rapier</div>
+            <div class="card-description">
+                A plugin for Rapier, a 2D and 3D physics engine. Maintained by the Rapier developers.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-silk">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ManevilleF&#x2F;bevy_silk">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;23d5ab2bbb7bd24800.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_silk</div>
+            <div class="card-description">
+                Cloth physics plugin for bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="platform-integration"></a>
+        <h3 class="asset-subsection">
+            Platform Integration<a class="anchor-link" href="#platform-integration">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-discord-presence">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;jewlexx&#x2F;bevy-discord-rpc">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-discord-presence</div>
+            <div class="card-description">
+                Discord Rich Presence Client for the Bevy Game Engine.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-steamworks">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;james7132&#x2F;bevy-steamworks">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-steamworks</div>
+            <div class="card-description">
+                Steamworks SDK Plugin.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="scripting"></a>
+        <h3 class="asset-subsection">
+            Scripting<a class="anchor-link" href="#scripting">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-mod-scripting">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;makspll&#x2F;bevy_mod_scripting">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;b3054521b44bd86c00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_mod_scripting</div>
+            <div class="card-description">
+                Multi-language scripting support for Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="shapes"></a>
+        <h3 class="asset-subsection">
+            Shapes<a class="anchor-link" href="#shapes">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-smud">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;johanhelsing&#x2F;bevy_smud">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;1ee00f64f847c25500.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_smud</div>
+            <div class="card-description">
+                Draw shapes for 2d and ui using signed distance fields
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-svg">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Weasy666&#x2F;bevy_svg">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_svg</div>
+            <div class="card-description">
+                Load and draw SVG-files in 2D and 3D
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="templates"></a>
+        <h3 class="asset-subsection">
+            Templates<a class="anchor-link" href="#templates">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-game-template">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;NiklasEi&#x2F;bevy_game_template">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_game_template</div>
+            <div class="card-description">
+                An opinionated template for a Bevy game with workflows for Windows, Linux, macOS and WASM releases
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-github-ci-template">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;bevyengine&#x2F;bevy_github_ci_template">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_github_ci_template</div>
+            <div class="card-description">
+                A simple template providing basic CI and automated builds for Windows, Linux, MacOS and the web.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="ui"></a>
+        <h3 class="asset-subsection">
+            UI<a class="anchor-link" href="#ui">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="bevy-ui-navigation">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy-ui-navigation">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-ui-navigation</div>
+            <div class="card-description">
+                Add a menu navigation system using components
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-megaui">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;mvlabat&#x2F;bevy_megaui">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_megaui</div>
+            <div class="card-description">
+                A plugin for megaui integration into Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-console">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;RichoDemus&#x2F;bevy-console">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_console</div>
+            <div class="card-description">
+                A half-life2 style console using bevy_egui
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-css-prototype">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;sharky-david&#x2F;bevy_prototype_css">
+        
+        <div class="card-text">
+            <div class="card-title">Bevy CSS (Prototype)</div>
+            <div class="card-description">
+                Bevy UI Node Styles defined with CSS
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-ninepatch">
+    <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bevy_ninepatch">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;21af4ea10e69f5f800.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">bevy_ninepatch</div>
+            <div class="card-description">
+                Display 9-Patch UI elements, where you can specify how different parts of a PNG should grow
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-egui">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;mvlabat&#x2F;bevy_egui">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_egui</div>
+            <div class="card-description">
+                A plugin for egui integration into Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+        
+
+        <a class="anchor-target" id="apps"></a>
+        <h1 id="apps" class="asset-section">
+            Apps<a class="anchor-link" href="#apps">#</a>
+        </h1>
+
+        
+
+        
+        
+        
+        
+
+        <a class="anchor-target" id="games"></a>
+        <h3 class="asset-subsection">
+            Games<a class="anchor-link" href="#games">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="miner">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;timboldt&#x2F;miner">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;c2c6fe93f495e00a00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Miner</div>
+            <div class="card-description">
+                A mining-based platform game.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-rider">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;bonsairobo&#x2F;bevy_rider">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_rider</div>
+            <div class="card-description">
+                Line Rider, riding linearly, on segments of lines
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-tetris">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;8bit-pudding&#x2F;bevy-tetris">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-tetris</div>
+            <div class="card-description">
+                It's Tetris!
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="labyrinth-game">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;insrcd&#x2F;labrynth-game">
+        
+        <div class="card-text">
+            <div class="card-title">labyrinth-game</div>
+            <div class="card-description">
+                A humble attempt at a roguelike / market-sim game
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="dungeon-quest">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;inFngNam&#x2F;dungeon-quest">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;7d81f3191640ac8700.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Dungeon Quest</div>
+            <div class="card-description">
+                Control your character and kill monsters
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="zenith">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;rsaihe&#x2F;zenith">
+        
+        <div class="card-text">
+            <div class="card-title">Zenith</div>
+            <div class="card-description">
+                A space-themed shoot 'em up game
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="build-a-better-buddy">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;cart&#x2F;build_a_better_buddy">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;669687800498ebe000.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Build A Better Buddy</div>
+            <div class="card-description">
+                A cute auto-battler with the goal of Building A Better Buddy. Built for Bevy Jam #1.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="taileater">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;szunami&#x2F;taileater">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/apps/games/taileater.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">taileater</div>
+            <div class="card-description">
+                Bevy port of great 8-bit Atari game, working native and in the browser
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="warlock-s-gambit">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;team-plover&#x2F;warlocks-gambit">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;f620c9e78d78883b00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Warlock&#x27;s Gambit</div>
+            <div class="card-description">
+                A Puzzle/card game made for the 1st bevy jam
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="fish-fight-punchy">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;fishfight&#x2F;punchy">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;a82202026877f5bc00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Fish Fight: Punchy</div>
+            <div class="card-description">
+                A fishy beatemup.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="murder-user-dungeon">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;TheRealTeamFReSh&#x2F;MurderUserDungeon">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;e4663c8ca326775300.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Murder User Dungeon</div>
+            <div class="card-description">
+                A 2D game made in one week for the RustyJam21
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="per-spatium">
+    <a href="https:&#x2F;&#x2F;gitlab.com&#x2F;BottledByte&#x2F;per-spatium">
+        
+        <div class="card-text">
+            <div class="card-title">per_spatium</div>
+            <div class="card-description">
+                Scroll-down space shooter game
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="moon-creator">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;pjankiewicz&#x2F;nbody">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/apps/games/nbody_moon_creator.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Moon creator</div>
+            <div class="card-description">
+                Yet another n-body simulation with egui interface for settings
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="flappy-bevy">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;TanTanDev&#x2F;flappy_bevy">
+        
+        <div class="card-text">
+            <div class="card-title">flappy_bevy</div>
+            <div class="card-description">
+                A Flappy Bird clone
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bounce-up">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;cryscan&#x2F;summer-jam">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;d508c06454e7389000.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Bounce Up!</div>
+            <div class="card-description">
+                Pong but has gravity
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="theta-wave">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;thetawavegame&#x2F;thetawave">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;ec85d4ee3b67258300.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Theta Wave</div>
+            <div class="card-description">
+                A roguelite space shooter game.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="unbalanced-brawl">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;yopox&#x2F;LD49">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;fe90092adfa59ecc00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Unbalanced Brawl</div>
+            <div class="card-description">
+                An autochess made for LD49.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="comet-super-kaizen-overloaded-comet">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;djeedai&#x2F;super-kaizen-overloaded">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;5a74373ccd569b4100.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">☄ Super Kaizen Overloaded ☄</div>
+            <div class="card-description">
+                A shoot'em up written in 🦀 Rust with the 🕊 Bevy game engine. (Bevy Game Jam #1)
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="flock-rs">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;JohnPeel&#x2F;flock-rs">
+        
+        <div class="card-text">
+            <div class="card-title">flock-rs</div>
+            <div class="card-description">
+                An example of steering and flocking behaviors
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="quien-es-el-mechaburro">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ramirezmike&#x2F;quien_es_el_mechaburro">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/apps/games/mechaburro.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">¿Quien es el MechaBurro?</div>
+            <div class="card-description">
+                3D singleplayer/local multiplayer twin-stick shooter
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="snake-bevy">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;mtKeller&#x2F;snake_bevy">
+        
+        <div class="card-text">
+            <div class="card-title">snake_bevy</div>
+            <div class="card-description">
+                It's Snake!
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="oicana">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;NiklasEi&#x2F;oicana">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;ff29a7af6478eda100.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">oicana</div>
+            <div class="card-description">
+                A tower defense game with puzzle aspects
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="smoke-rs">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;cvhariharan&#x2F;smoke-rs">
+        
+        <div class="card-text">
+            <div class="card-title">smoke-rs</div>
+            <div class="card-description">
+                A simple smoke simulation using particles, built with Bevy.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="typey-birb">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;rparrett&#x2F;typey_birb">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;6acb95ef081c2ae200.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Typey Birb</div>
+            <div class="card-description">
+                A simple typing game. Built for Bevy Jam #1.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="tetris-for-bevy-yet-another">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;corbamico&#x2F;bevy-tetris">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/apps/games/bevy-tetris-yat.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Tetris for Bevy, yet another</div>
+            <div class="card-description">
+                Tetris clone for Bevy 0.4/0.6/0.7
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="thallada-bevy-nbody">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;thallada&#x2F;bevy-nbody">
+        
+        <div class="card-text">
+            <div class="card-title">thallada-bevy_nbody</div>
+            <div class="card-description">
+                An N-body simulation in Rust
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="arugio">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ostwilkens&#x2F;arugio">
+        
+        <div class="card-text">
+            <div class="card-title">arugio</div>
+            <div class="card-description">
+                Multiplayer server-authoritative networked 'game' with Browser (WebGL) client and native server
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="projectris">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;bonsairobo&#x2F;projectris">
+        
+        <div class="card-text">
+            <div class="card-title">projectris</div>
+            <div class="card-description">
+                It's 3D Tetris, but you only get to play the shadows of the piece.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="i-sjon-kan-ingen-hora-dig-skrika">
+    <a href="https:&#x2F;&#x2F;gitlab.com&#x2F;TheZoq2&#x2F;i_sjon_kan_ingen_hora_dig_skrika">
+        
+        <div class="card-text">
+            <div class="card-title">i_sjon_kan_ingen_hora_dig_skrika</div>
+            <div class="card-description">
+                Swedish rowing boat pirate simulator 2020
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="robbo">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;mrk-its&#x2F;bevy-robbo">
+        
+        <div class="card-text">
+            <div class="card-title">Robbo</div>
+            <div class="card-description">
+                Bevy port of great 8-bit Atari game, working native and in the browser
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-combat">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ElliotB256&#x2F;bevy_combat">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/apps/games/bevy_combat.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Bevy Combat</div>
+            <div class="card-description">
+                 A sci-fi battle simulation implemented in the bevy engine. 
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-sokoban">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ropewalker&#x2F;bevy_sokoban">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_sokoban</div>
+            <div class="card-description">
+                Simple implementation of Sokoban
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-space-invaders">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;nicolashahn&#x2F;bevy-space-invaders">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-space-invaders</div>
+            <div class="card-description">
+                It's Space Invaders!
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="libracity">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;djeedai&#x2F;libracity">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;8c8d43708247bd7f00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Libracity</div>
+            <div class="card-description">
+                A puzzle game where you build a city at equilibrium on a needle. (LDJam #49)
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="another-snake-game">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;JhnW&#x2F;AnotherRustBevySnakeGame">
+        
+        <div class="card-text">
+            <div class="card-title">Another Snake Game</div>
+            <div class="card-description">
+                Another, very simple snake clone
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bong">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;MitchellMarinoDev&#x2F;bong">
+        
+        <div class="card-text">
+            <div class="card-title">bong</div>
+            <div class="card-description">
+                A full fledged sample game showcasing bevy-pigeon
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-pong">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;SuperiorJT&#x2F;bevy_pong">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_pong</div>
+            <div class="card-description">
+                It's Pong! Based on the 'breakout' bevy example
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="kataster">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;Bobox214&#x2F;Kataster">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/apps/games/Kataster.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Kataster</div>
+            <div class="card-description">
+                A simple single-screen spaceshooter with a shader background. Uses Heron
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="whoisdavid-bevy-nbody">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;WhoisDavid&#x2F;bevy-nbody">
+        
+        <div class="card-text">
+            <div class="card-title">WhoisDavid-bevy-nbody</div>
+            <div class="card-description">
+                3d n-body simulation of the planets of the Solar System.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="limbo-pass">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;shnewto&#x2F;limbo_pass">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;107dbb19f9e6a0aa00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">limbo pass</div>
+            <div class="card-description">
+                a little game, limbo on a mountain pass
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="pixie-wrangler">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;rparrett&#x2F;pixie_wrangler">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;d50eb7b8b67128b200.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Pixie Wrangler</div>
+            <div class="card-description">
+                A 2d circuit design puzzle game.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="keep-moving-and-nobody-burns">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;mockersf&#x2F;kmanb">
+        
+        <div class="card-text">
+            <div class="card-title">Keep Moving and Nobody Burns</div>
+            <div class="card-description">
+                A bomberman against time (made for Ludum Dare 47)
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="one-click-ninja">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;fluffysquirrels&#x2F;one-click-ninja">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;035936797c8800cb00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">One-Click Ninja</div>
+            <div class="card-description">
+                A rhythm game for '1-Button Jam 2021'
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="sio2">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;dmitriy-shmilo&#x2F;sio2">
+        
+        <div class="card-text">
+            <div class="card-title">SiO2</div>
+            <div class="card-description">
+                A simple powder toy clone
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="tetris-for-bevy-0-6-0-7">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;langp11&#x2F;bevy-tetris-0.6">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;8bd2b6ec29ced7ee00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Tetris for Bevy 0.6 &#x2F; 0.7</div>
+            <div class="card-description">
+                A partial Tetris clone written as an introductory tutorial for Bevy 0.6 / 0.7
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bavy-balls">
+    <a href="https:&#x2F;&#x2F;robswain.itch.io&#x2F;bavy-balls">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;3b0db168b6810a3e00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Bavy Balls</div>
+            <div class="card-description">
+                Rolling shiny balls. Which will win? Some unfairly start before others! (Bevy Game Jam #1)
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-squares">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;TheNeikos&#x2F;bevy_squares">
+        
+        <div class="card-text">
+            <div class="card-title">bevy_squares</div>
+            <div class="card-description">
+                A remake of the 'Threes' game, built with Bevy
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="unflock">
+    <a href="https:&#x2F;&#x2F;gitlab.com&#x2F;central-gaming-system&#x2F;unflock&#x2F;">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;6e3c3477d2b3258700.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">UnFlock</div>
+            <div class="card-description">
+                Drag the birds around until no more lines intersect.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="not-snake">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;ramirezmike&#x2F;not_snake_game">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;e591621c834de52100.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Not Snake</div>
+            <div class="card-description">
+                A snake game but in 3D and you're the food
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="taipo">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;rparrett&#x2F;taipo">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;be5239bdf2a82a3e00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">taipo</div>
+            <div class="card-description">
+                A 2d typing/tower defense game for the browser.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="cheaters-never-win">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;TheRealTeamFReSh&#x2F;Cheaters-Never-Win">
+        
+        <div class="card-image card-image-default">
+            <img src="https:&#x2F;&#x2F;bevyengine.org&#x2F;processed_images&#x2F;37937ea8b3badd2f00.png" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Cheaters Never Win</div>
+            <div class="card-description">
+                A infinite runner built in 7 days for the Bevy Jam #1
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="colonize">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;indiv0&#x2F;colonize">
+        
+        <div class="card-text">
+            <div class="card-title">colonize</div>
+            <div class="card-description">
+                A Dwarf Fortress/Rimworld-like game written in Rust.
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="keep-inside">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;davidB&#x2F;ld47_keep_inside">
+        
+        <div class="card-text">
+            <div class="card-title">Keep Inside</div>
+            <div class="card-description">
+                A solo pong on a circle (made for Ludum Dare 47)
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+
+        <a class="anchor-target" id="tools"></a>
+        <h3 class="asset-subsection">
+            Tools<a class="anchor-link" href="#tools">#</a>
+        </h3>
+        <div class="item-grid">
+            
+            
+            
+            
+<div class="card" id="nodus">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;r4gus&#x2F;nodus">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/apps/tools/nodus.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Nodus</div>
+            <div class="card-description">
+                Logic gate simulator
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="bevy-calc">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;PravinKumar95&#x2F;simple-calc">
+        
+        <div class="card-text">
+            <div class="card-title">bevy-calc</div>
+            <div class="card-description">
+                A simple calculator
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+            
+<div class="card" id="fun-notation">
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;notation-fun&#x2F;notation">
+        
+        <div class="card-image card-image-default">
+            <img src="https://bevyengine.org/assets/apps/tools/fun-notation.gif" loading="lazy" />
+        </div>
+        
+        <div class="card-text">
+            <div class="card-title">Fun Notation</div>
+            <div class="card-description">
+                Experimentation on musical notations, colorful notes, chords and guitar tabs
+            </div>
+        </div>
+    </a>
+</div>
+
+            
+        </div>
+
+        
+        
+    </div>
+
+        </div>
+    </div>
+
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

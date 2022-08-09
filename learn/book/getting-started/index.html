@@ -1,0 +1,1247 @@
+
+    
+
+
+
+    
+
+
+
+    
+        
+    
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Bevy - Getting Started" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bevyengine.org&#x2F;&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;" />
+        <meta property="og:image" content="https://bevyengine.org/assets/bevy_logo_fill.png" />
+        <meta property="og:description" content="Bevy is a refreshingly simple data-driven game engine built in Rust. It is free and open-source forever!" />
+        <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+        <link rel="stylesheet" href="/site.css" />
+        <link href="/atom.xml" rel="alternate" type="application/atom+xml" />
+        <title>Bevy - Getting Started</title>
+        
+    <script src="/optional-helpers.js"></script>
+
+    </head>
+    <body>
+        <div class="layout">
+            <input id="mobile-menu-state" class="hidden" type="checkbox">
+            <header class="layout__header header" data-mobile-menu-state-container>
+                <div class="header__content">
+                    <label class="main-menu-backdrop" for="mobile-menu-state"></label>
+                    <label class="header__hamburger button-square button-square--header" for="mobile-menu-state">
+                        <img src="/assets/icon-hamburger.svg">
+                    </label>
+                    <div class="header__left-block">
+                        <a class="header__logo" href="/">
+                            <img class="logo logo--icon" src="/assets/bevy_icon_dark.svg" alt="Bevy Engine">
+                            <img class="logo logo--full" src="/assets/bevy_logo_dark.svg" alt="Bevy Engine">
+                        </a>
+                        <div class="header__message">
+                            
+                                The Book
+                            
+                        </div>
+                    </div>
+                    
+    <input id="page-menu-switch-state" class="hidden" type="checkbox" checked>
+
+                    <nav class="header__menu main-menu main-menu--with-page-menu" role="navigation" data-page-menu-switch-state-container>
+                        <div class="main-menu__header">
+                            <a href="/">
+                                <img class="logo" src="/assets/bevy_logo_dark.svg" alt="Bevy Engine">
+                            </a>
+                            <label class="button-square button-square--header" for="mobile-menu-state">
+                                <img src="/assets/icon-times.svg">
+                            </label>
+                        </div>
+                        
+    <div class="main-menu__page-menu-switch">
+        <label class="menu-switch" for="page-menu-switch-state">
+            <div class="menu-switch__option menu-switch__option--main-menu">Main Menu</div>
+            <div class="menu-switch__option menu-switch__option--page-menu">Book</div>
+        </label>
+    </div>
+
+                        <div class="main-menu__content">
+                            <div class="main-menu__page-menu">
+                                
+    
+    <ul class="tree-menu">
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;introduction&#x2F;">Introduction</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+    
+        
+        <input id="mobile-menu-learn-book-getting-started" class="tree-menu__state" type="checkbox" checked>
+    
+
+    <li class="tree-menu__item tree-menu__item--active">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;">Getting Started</a>
+            
+                <label class="tree-menu__toggle" for="mobile-menu-learn-book-getting-started">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;setup&#x2F;">Setup</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;apps&#x2F;">Apps</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;ecs&#x2F;">ECS</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;plugins&#x2F;">Plugins</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;resources&#x2F;">Resources</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;next-steps&#x2F;">Next Steps</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        
+        <input id="mobile-menu-learn-book-contributing" class="tree-menu__state" type="checkbox" >
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;">Contributing</a>
+            
+                <label class="tree-menu__toggle" for="mobile-menu-learn-book-contributing">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;code&#x2F;">Code</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;docs&#x2F;">Docs</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;troubleshooting&#x2F;">Troubleshooting</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;faq&#x2F;">Faq</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        
+        <input id="mobile-menu-learn-book-migration-guides" class="tree-menu__state" type="checkbox" >
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;">Migration Guides</a>
+            
+                <label class="tree-menu__toggle" for="mobile-menu-learn-book-migration-guides">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.4-0.5&#x2F;">0.4 to 0.5</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.5-0.6&#x2F;">0.5 to 0.6</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.6-0.7&#x2F;">0.6 to 0.7</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.7-0.8&#x2F;">0.7 to 0.8</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+
+
+                            </div>
+                            <ul class="main-menu__menu">
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+        
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;learn" class="main-menu__link main-menu__link--active">
+            <span>Learn</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;news" class="main-menu__link">
+            <span>News</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;community" class="main-menu__link">
+            <span>Community</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;assets" class="main-menu__link">
+            <span>Assets</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;examples" class="main-menu__link">
+            <span>Examples</span>
+        </a>
+    </li>
+
+                                
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__cta-container">
+                        <a class="button button--pink header__cta" href="https://github.com/sponsors/cart">Donate <img class="button__icon" src="/assets/heart.svg" alt="heart icon"/></a>
+                        <a class="button header__cta" href="/learn/book/getting-started/">Get Started</a>
+                    </div>
+                </div>
+            </header>
+            <main class="layout__content">
+                <div class="container">
+                    
+    <div class="page-with-menu">
+        <div class="page-with-menu__menu-wrapper">
+            <div class="page-with-menu__menu">
+                
+    
+    <ul class="tree-menu">
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;introduction&#x2F;">Introduction</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+    
+        
+        <input id="page-menu-learn-book-getting-started" class="tree-menu__state" type="checkbox" checked>
+    
+
+    <li class="tree-menu__item tree-menu__item--active">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;">Getting Started</a>
+            
+                <label class="tree-menu__toggle" for="page-menu-learn-book-getting-started">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;setup&#x2F;">Setup</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;apps&#x2F;">Apps</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;ecs&#x2F;">ECS</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;plugins&#x2F;">Plugins</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;resources&#x2F;">Resources</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;next-steps&#x2F;">Next Steps</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        
+        <input id="page-menu-learn-book-contributing" class="tree-menu__state" type="checkbox" >
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;">Contributing</a>
+            
+                <label class="tree-menu__toggle" for="page-menu-learn-book-contributing">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;code&#x2F;">Code</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;docs&#x2F;">Docs</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;troubleshooting&#x2F;">Troubleshooting</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;faq&#x2F;">Faq</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        
+        <input id="page-menu-learn-book-migration-guides" class="tree-menu__state" type="checkbox" >
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label tree-menu__label--with-chevron">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;">Migration Guides</a>
+            
+                <label class="tree-menu__toggle" for="page-menu-learn-book-migration-guides">
+                    <img class="tree-menu__chevron" src="/assets/icon-chevron-down.svg">
+                </label>
+            
+        </div>
+        
+            <ul class="tree-menu">
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.4-0.5&#x2F;">0.4 to 0.5</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.5-0.6&#x2F;">0.5 to 0.6</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.6-0.7&#x2F;">0.6 to 0.7</a>
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.7-0.8&#x2F;">0.7 to 0.8</a>
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+
+
+            </div>
+        </div>
+        <div class="page-with-menu__content">
+            
+<div class="book-page">
+    <div class="book-content">
+        
+        
+        
+
+        
+            
+            
+
+            
+        
+            
+            
+
+            
+                
+                
+
+                
+            
+                
+                
+
+                
+            
+                
+                
+
+                
+            
+                
+                
+
+                
+            
+                
+                
+
+                
+            
+        
+            
+            
+
+            
+        
+            
+            
+
+            
+                
+                
+
+                
+            
+                
+                
+
+                
+            
+        
+            
+            
+
+            
+        
+            
+            
+
+            
+        
+            
+            
+
+            
+                
+                
+
+                
+            
+                
+                
+
+                
+            
+                
+                
+
+                
+            
+                
+                
+
+                
+            
+        
+
+        
+        
+        
+        
+
+        
+            
+
+            
+
+            
+
+            
+        
+            
+
+            
+
+            
+                
+                
+            
+
+            
+                
+                
+
+        <h1>
+            
+                Getting Started
+            
+            
+        </h1>
+        <div class="media-content"><p>This section will help you get started on your Bevy journey as quickly as possible. It will walk you through setting up your development environment and writing a simple Bevy app.</p>
+<h2 id="quick-start">Quick Start
+<a class="anchor-link" href="#quick-start">#</a>
+</h2>
+<p>If you want to dive in immediately and you already have a working Rust setup, feel free to follow this &quot;quick start&quot; guide. Otherwise, move on to the next page.</p>
+<p>Note: the &quot;fast compiles&quot; setup is on the next page, so you might want to read that section first.</p>
+<h3 id="try-the-examples">Try the Examples
+<a class="anchor-link" href="#try-the-examples">#</a>
+</h3>
+<ol>
+<li>Clone the <a href="https://github.com/bevyengine/bevy">Bevy repo</a>:<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">git</span></span><span class="z-meta z-function-call z-arguments z-shell"> clone https://github.com/bevyengine/bevy</span>
+</span></code></pre>
+</li>
+<li>Navigate to the new &quot;bevy&quot; folder<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> bevy</span>
+</span></code></pre>
+</li>
+<li>Switch to the correct Bevy version (as the default is the git main development branch)<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> use the latest Bevy release</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">git</span></span><span class="z-meta z-function-call z-arguments z-shell"> checkout latest</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> or a specific version</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">git</span></span><span class="z-meta z-function-call z-arguments z-shell"> checkout v0.8.0</span>
+</span></code></pre>
+</li>
+<li>Try the examples in the <a href="https://github.com/bevyengine/bevy/tree/latest/examples#examples">examples folder</a><pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cargo</span></span><span class="z-meta z-function-call z-arguments z-shell"> run<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>example</span> breakout</span>
+</span></code></pre>
+</li>
+</ol>
+<h3 id="add-bevy-as-a-dependency">Add Bevy as a Dependency
+<a class="anchor-link" href="#add-bevy-as-a-dependency">#</a>
+</h3>
+<p>Bevy is <a href="https://crates.io/crates/bevy">available as a library on crates.io</a>.</p>
+<p>The easiest way to add it to your project is to use <code>cargo add</code>:</p>
+<pre data-lang="cli" class="language-cli z-code"><code class="language-cli" data-lang="cli"><span class="z-text z-plain">$ cargo add bevy
+</span></code></pre>
+<p>Alternatively, you can manually add it to your project's Cargo.toml like this:</p>
+<pre data-lang="toml" class="language-toml z-code"><code class="language-toml" data-lang="toml"><span class="z-source z-toml"><span class="z-punctuation z-definition z-table z-begin z-toml">[</span><span class="z-meta z-tag z-table z-toml"><span class="z-entity z-name z-table z-toml">dependencies</span></span><span class="z-punctuation z-definition z-table z-end z-toml">]</span>
+<span class="z-meta z-tag z-key z-toml"><span class="z-entity z-name z-tag z-toml">bevy</span></span> <span class="z-punctuation z-definition z-key-value z-toml">=</span> <span class="z-string z-quoted z-double z-basic z-toml"><span class="z-punctuation z-definition z-string z-begin z-toml">&quot;</span>0.8<span class="z-punctuation z-definition z-string z-end z-toml">&quot;</span></span> <span class="z-comment z-line z-number-sign z-toml"><span class="z-punctuation z-definition z-comment z-toml">#</span> make sure this is the latest version</span>
+</span></code></pre>
+<p>Make sure to use the latest <code>bevy</code> crate version (<a href="https://crates.io/crates/bevy"><img src="https://img.shields.io/crates/v/bevy.svg" alt="Crates.io" /></a>).</p>
+</div>
+        <div class="book-footer">
+            <nav class="book-footer__nav">
+                
+                    <a class="book-footer__link book-footer__link--next" href="&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;setup&#x2F;" data-book-nav-next>
+                        <div class="book-footer__label">
+                            <div class="book-footer__dir">Next</div>
+                            Setup
+                        </div>
+                        <i class="book-footer__chevron icon icon--chevron-right"></i>
+                    </a>
+                
+                
+                    <a class="book-footer__link book-footer__link--prev" href="&#x2F;learn&#x2F;book&#x2F;introduction&#x2F;" data-book-nav-previous>
+                        <div class="book-footer__label">
+                            <div class="book-footer__dir">Previous</div>
+                            Introduction
+                        </div>
+                        <i class="book-footer__chevron icon icon--chevron-left"></i>
+                    </a>
+                
+            </nav>
+            <div class="book-footer__edit-wrapper">
+                <a class="book-footer__edit" href="https://github.com/bevyengine/bevy-website/edit/master/content/learn&#x2F;book&#x2F;getting-started&#x2F;_index.md">
+                    <i class="icon icon--pencil"></i>
+                    Improve this page
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

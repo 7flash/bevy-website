@@ -1,0 +1,879 @@
+
+    
+
+
+
+    
+
+
+
+    
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Bevy - Bevy Examples in WebGL2" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bevyengine.org&#x2F;&#x2F;examples&#x2F;" />
+        <meta property="og:image" content="https://bevyengine.org/assets/bevy_logo_fill.png" />
+        <meta property="og:description" content="Bevy is a refreshingly simple data-driven game engine built in Rust. It is free and open-source forever!" />
+        <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+        <link rel="stylesheet" href="/site.css" />
+        <link href="/atom.xml" rel="alternate" type="application/atom+xml" />
+        <title>Bevy - Bevy Examples in WebGL2</title>
+         
+    </head>
+    <body>
+        <div class="layout">
+            <input id="mobile-menu-state" class="hidden" type="checkbox">
+            <header class="layout__header header" data-mobile-menu-state-container>
+                <div class="header__content">
+                    <label class="main-menu-backdrop" for="mobile-menu-state"></label>
+                    <label class="header__hamburger button-square button-square--header" for="mobile-menu-state">
+                        <img src="/assets/icon-hamburger.svg">
+                    </label>
+                    <div class="header__left-block">
+                        <a class="header__logo" href="/">
+                            <img class="logo logo--icon" src="/assets/bevy_icon_dark.svg" alt="Bevy Engine">
+                            <img class="logo logo--full" src="/assets/bevy_logo_dark.svg" alt="Bevy Engine">
+                        </a>
+                        <div class="header__message">
+                            
+                                Examples
+                            
+                        </div>
+                    </div>
+                    
+    <input id="page-menu-switch-state" class="hidden" type="checkbox" checked>
+
+                    <nav class="header__menu main-menu main-menu--with-page-menu" role="navigation" data-page-menu-switch-state-container>
+                        <div class="main-menu__header">
+                            <a href="/">
+                                <img class="logo" src="/assets/bevy_logo_dark.svg" alt="Bevy Engine">
+                            </a>
+                            <label class="button-square button-square--header" for="mobile-menu-state">
+                                <img src="/assets/icon-times.svg">
+                            </label>
+                        </div>
+                        
+    <div class="main-menu__page-menu-switch">
+        <label class="menu-switch" for="page-menu-switch-state">
+            <div class="menu-switch__option menu-switch__option--main-menu">Main Menu</div>
+            <div class="menu-switch__option menu-switch__option--page-menu">Examples</div>
+        </label>
+    </div>
+
+                        <div class="main-menu__content">
+                            <div class="main-menu__page-menu">
+                                
+    
+    <ul class="tree-menu">
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#2d">2D</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#3d">3D</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#ui">UI</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#audio">Audio</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#shader">Shader</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#ecs">ECS</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#games">Games</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#stress-tests">Stress Tests</a>
+            
+        </div>
+        
+    </li>
+
+        
+    </ul>
+
+
+                            </div>
+                            <ul class="main-menu__menu">
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;learn" class="main-menu__link">
+            <span>Learn</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;news" class="main-menu__link">
+            <span>News</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;community" class="main-menu__link">
+            <span>Community</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;assets" class="main-menu__link">
+            <span>Assets</span>
+        </a>
+    </li>
+
+                                
+    
+    
+
+    
+        
+    
+
+    
+    
+    
+
+    
+        
+    
+
+    <li class="main-menu__entry">
+        <a href="&#x2F;examples" class="main-menu__link main-menu__link--active">
+            <span>Examples</span>
+        </a>
+    </li>
+
+                                
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__cta-container">
+                        <a class="button button--pink header__cta" href="https://github.com/sponsors/cart">Donate <img class="button__icon" src="/assets/heart.svg" alt="heart icon"/></a>
+                        <a class="button header__cta" href="/learn/book/getting-started/">Get Started</a>
+                    </div>
+                </div>
+            </header>
+            <main class="layout__content">
+                <div class="container">
+                    
+    <div class="page-with-menu">
+        <div class="page-with-menu__menu-wrapper">
+            <div class="page-with-menu__menu">
+                
+    
+    <ul class="tree-menu">
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#2d">2D</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#3d">3D</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#ui">UI</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#audio">Audio</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#shader">Shader</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#ecs">ECS</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#games">Games</a>
+            
+        </div>
+        
+    </li>
+
+        
+            
+    
+    
+    
+
+    
+
+    <li class="tree-menu__item">
+        <div class="tree-menu__label">
+            <a class="tree-menu__link" href="#stress-tests">Stress Tests</a>
+            
+        </div>
+        
+    </li>
+
+        
+    </ul>
+
+
+            </div>
+        </div>
+        <div class="page-with-menu__content">
+            
+<div class="assets">
+    <div class="assets-intro">
+        These examples demonstrate how to use Bevy's features in a minimal, easy to understand way. Click an example below to run it in
+        your browser (using WASM + WebGL) and view the source code. You can also view these examples (and others) in the
+        <a href="https://github.com/bevyengine/bevy/tree/latest/examples#examples">Bevy repo</a>.
+    </div>
+    
+        
+
+        <a class="anchor-target" id="2d"></a>
+        <h1 class="asset-section">
+            2D<a class="anchor-link" href="#2d">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+
+            <a class="card" href="/examples/2d/sprite/"
+                id="sprite">
+                
+                <div class="card-text">
+                    <div class="card-title">sprite</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/2d/sprite-flipping/"
+                id="sprite-flipping">
+                
+                <div class="card-text">
+                    <div class="card-title">sprite_flipping</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/2d/sprite-sheet/"
+                id="sprite-sheet">
+                
+                <div class="card-text">
+                    <div class="card-title">sprite_sheet</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/2d/text2d/"
+                id="text2d">
+                
+                <div class="card-text">
+                    <div class="card-title">text2d</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/2d/mesh2d/"
+                id="mesh2d">
+                
+                <div class="card-text">
+                    <div class="card-title">mesh2d</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/2d/mesh2d-manual/"
+                id="mesh2d-manual">
+                
+                <div class="card-text">
+                    <div class="card-title">mesh2d_manual</div>
+                </div>
+            </a>
+
+            
+        </div>
+        
+
+    
+        
+
+        <a class="anchor-target" id="3d"></a>
+        <h1 class="asset-section">
+            3D<a class="anchor-link" href="#3d">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+
+            <a class="card" href="/examples/3d/3d-scene/"
+                id="3d-scene">
+                
+                <div class="card-text">
+                    <div class="card-title">3d_scene</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/3d/lighting/"
+                id="lighting">
+                
+                <div class="card-text">
+                    <div class="card-title">lighting</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/3d/load-gltf/"
+                id="load-gltf">
+                
+                <div class="card-text">
+                    <div class="card-title">load_gltf</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/3d/orthographic/"
+                id="orthographic">
+                
+                <div class="card-text">
+                    <div class="card-title">orthographic</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/3d/parenting/"
+                id="parenting">
+                
+                <div class="card-text">
+                    <div class="card-title">parenting</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/3d/pbr/"
+                id="pbr">
+                
+                <div class="card-text">
+                    <div class="card-title">pbr</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/3d/spherical-area-lights/"
+                id="spherical-area-lights">
+                
+                <div class="card-text">
+                    <div class="card-title">spherical_area_lights</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/3d/texture/"
+                id="texture">
+                
+                <div class="card-text">
+                    <div class="card-title">texture</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/3d/update-gltf-scene/"
+                id="update-gltf-scene">
+                
+                <div class="card-text">
+                    <div class="card-title">update_gltf_scene</div>
+                </div>
+            </a>
+
+            
+        </div>
+        
+
+    
+        
+
+        <a class="anchor-target" id="ui"></a>
+        <h1 class="asset-section">
+            UI<a class="anchor-link" href="#ui">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+
+            <a class="card" href="/examples/ui/button/"
+                id="button">
+                
+                <div class="card-text">
+                    <div class="card-title">button</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/ui/text/"
+                id="text">
+                
+                <div class="card-text">
+                    <div class="card-title">text</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/ui/text-debug/"
+                id="text-debug">
+                
+                <div class="card-text">
+                    <div class="card-title">text_debug</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/ui/ui/"
+                id="ui">
+                
+                <div class="card-text">
+                    <div class="card-title">ui</div>
+                </div>
+            </a>
+
+            
+        </div>
+        
+
+    
+        
+
+        <a class="anchor-target" id="audio"></a>
+        <h1 class="asset-section">
+            Audio<a class="anchor-link" href="#audio">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+
+            <a class="card" href="/examples/audio/audio/"
+                id="audio">
+                
+                <div class="card-text">
+                    <div class="card-title">audio</div>
+                </div>
+            </a>
+
+            
+        </div>
+        
+
+    
+        
+
+        <a class="anchor-target" id="shader"></a>
+        <h1 class="asset-section">
+            Shader<a class="anchor-link" href="#shader">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+
+            <a class="card" href="/examples/shader/shader-instancing/"
+                id="shader-instancing">
+                
+                <div class="card-text">
+                    <div class="card-title">shader_instancing</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/shader/shader-material-glsl/"
+                id="shader-material-glsl">
+                
+                <div class="card-text">
+                    <div class="card-title">shader_material_glsl</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/shader/shader-material/"
+                id="shader-material">
+                
+                <div class="card-text">
+                    <div class="card-title">shader_material</div>
+                </div>
+            </a>
+
+            
+        </div>
+        
+
+    
+        
+
+        <a class="anchor-target" id="ecs"></a>
+        <h1 class="asset-section">
+            ECS<a class="anchor-link" href="#ecs">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+
+            <a class="card" href="/examples/ecs/iter-combinations/"
+                id="iter-combinations">
+                
+                <div class="card-text">
+                    <div class="card-title">iter_combinations</div>
+                </div>
+            </a>
+
+            
+        </div>
+        
+
+    
+        
+
+        <a class="anchor-target" id="games"></a>
+        <h1 class="asset-section">
+            Games<a class="anchor-link" href="#games">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+
+            <a class="card" href="/examples/games/breakout/"
+                id="breakout">
+                
+                <div class="card-text">
+                    <div class="card-title">breakout</div>
+                </div>
+            </a>
+
+            
+
+            <a class="card" href="/examples/games/alien-cake-addict/"
+                id="alien-cake-addict">
+                
+                <div class="card-text">
+                    <div class="card-title">alien_cake_addict</div>
+                </div>
+            </a>
+
+            
+        </div>
+        
+
+    
+        
+
+        <a class="anchor-target" id="stress-tests"></a>
+        <h1 class="asset-section">
+            Stress Tests<a class="anchor-link" href="#stress-tests">#</a>
+        </h1>
+
+        
+        <div class="item-grid">
+            
+            
+            
+
+            <a class="card" href="/examples/stress-tests/bevymark/"
+                id="bevymark">
+                
+                <div class="card-text">
+                    <div class="card-title">bevymark</div>
+                </div>
+            </a>
+
+            
+        </div>
+        
+
+    
+</div>
+
+        </div>
+    </div>
+
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
